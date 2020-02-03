@@ -952,7 +952,7 @@ namespace Calculator
                     {
                         if (e.KeyChar == '\r' && (signOperation == '+' || signOperation == '-' || signOperation == '*' || signOperation == '/' || signOperation == '\r'))
                         {
-                            signOperation = signTwo;
+                            // signOperation = sign;
                             double a = Math.Round(Convert.ToDouble(numberOne), 2);
                             double b = 0;
                             if (!(signOperation == '/'))
@@ -980,7 +980,6 @@ namespace Calculator
                             }
                             if (!(a == b))
                             {
-                                numberTwo = this.mainWindow.textBox1.Text;
                                 numberMore = numberTwo;
                                 s++;
                             }
@@ -990,7 +989,7 @@ namespace Calculator
                                 {
                                     if (!(number1.Contains("\r\n")))
                                     {
-                                        numberTwo = number1;
+                                        numberTwo = signTwo.ToString();
                                     }
                                     else
                                     {

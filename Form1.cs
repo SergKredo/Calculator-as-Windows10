@@ -601,7 +601,7 @@ namespace Calculator
         // Метод-обработчик события Click для GitHub, возникающее при щелчке подменю GitHub code в калькуляторе 
         private void GithubCode(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/SergKredo");
+            Process.Start("https://github.com/SergKredo/Calculator-as-Windows10");
         }
 
         // Метод-обработчик события Click для LinkedinMenu, возникающее при щелчке подменю Linkedin в калькуляторе 
